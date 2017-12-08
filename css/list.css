@@ -1,0 +1,195 @@
+#xianlink-ul {
+  display: none;
+}
+
+/***********content***********************/
+.content {
+  width: 1220px;
+  margin: 0 auto;
+  min-height: 200px;
+  overflow: hidden;
+  /******************content-left********************************/
+  /******************content-right********************************/
+}
+.content > h3 {
+  line-height: 37px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.content > h3 > b {
+  font-size: 16px;
+  color: #ec1e22;
+}
+.content > h3 > span {
+  color: #d41c4f;
+}
+.content > .content-left {
+  float: left;
+  width: 192px;
+  min-height: 200px;
+  border-right: 1px solid #ccc;
+  overflow: hidden;
+}
+.content > .content-left .content-left-title {
+  line-height: 30px;
+  padding-left: 20px;
+  background-color: #666666;
+  color: #fff;
+  font-size: 14px;
+}
+.content > .content-left > ul > li {
+  padding: 0 5px;
+}
+.content > .content-left > ul > li > b {
+  line-height: 32px;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  font-size: 14px;
+}
+.content > .content-left > ul > li > b:hover {
+  color: red;
+}
+.content > .content-left > ul > li > b > span {
+  float: right;
+  width: 13px;
+  height: 13px;
+  margin-top: 12px;
+}
+.content > .content-left > ul > li > b > .jian1 {
+  background: url(../images/jian1.jpg) no-repeat left bottom;
+}
+.content > .content-left > ul > li > b > .jian2 {
+  background: url(../images/jian2.jpg) no-repeat left bottom;
+}
+.content > .content-left > ul > li > ul {
+  padding: 5px;
+  display: none;
+}
+.content > .content-left > ul > li > ul > li {
+  line-height: 24px;
+  padding-left: 5px;
+}
+.content > .content-left > ul > li > ul > li:hover {
+  background: #9a0909;
+}
+.content > .content-left > ul > li > ul > li:hover > a {
+  color: #fff;
+}
+.content > .content-left > ul > li > ul > li > a {
+  font-size: 12px;
+  color: #666;
+}
+.content > .content-left > ul > li > .show {
+  display: block;
+}
+.content > .content-right {
+  float: right;
+  width: 1020px;
+  min-height: 300px;
+  /*******************content-right-list********************************/
+}
+.content > .content-right > .content-right-title {
+  line-height: 30px;
+  font-size: 14px;
+  background: #ededed;
+}
+.content > .content-right > .content-right-title > a {
+  color: #000;
+}
+.content > .content-right > .content-right-title > a:hover {
+  color: red;
+}
+.content > .content-right > .content-right-title > span {
+  float: right;
+}
+.content > .content-right > .content-right-title > span a {
+  color: #000;
+}
+.content > .content-right > .content-right-title > span a:hover {
+  color: red;
+}
+.content > .content-right > .content-right-title2 {
+  line-height: 32px;
+  margin-top: 10px;
+  border-bottom: 1px solid #b30004;
+  font-size: 14px;
+}
+.content > .content-right > .content-right-title2 > a {
+  color: #000;
+}
+.content > .content-right > .content-right-title2 > a:hover {
+  color: red;
+}
+.content > .content-right > .content-right-title2 > span {
+  float: right;
+}
+.content > .content-right > .content-right-title2 > span > a {
+  float: left;
+  color: #999;
+}
+.content > .content-right > .content-right-title2 > span > a:nth-child(2) {
+  width: 18px;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 5px;
+  margin-left: 3px;
+  border: 1px solid #ccc;
+  color: #000;
+}
+.content > .content-right .content-right-list {
+  min-height: 200px;
+  overflow: hidden;
+  padding: 5px 4px;
+}
+.content > .content-right .content-right-list > li {
+  float: left;
+  height: 306px;
+  padding: 0 10px;
+  width: 231px;
+  margin-top: 20px;
+}
+.content > .content-right .content-right-list > li:hover {
+  border-color: #ccc;
+  box-shadow: 0 0 10px #ccc;
+}
+.content > .content-right .content-right-list > li > img {
+  width: 174px;
+  height: 174px;
+  margin-left: 30px;
+}
+.content > .content-right .content-right-list > li > ul {
+  height: 32px;
+}
+.content > .content-right .content-right-list > li > ul > li {
+  float: left;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #fff;
+}
+.content > .content-right .content-right-list > li > ul > li:hover {
+  border-color: red;
+}
+.content > .content-right .content-right-list > li > ul > li > img {
+  width: 30px;
+  height: 30px;
+}
+.content > .content-right .content-right-list > li > a {
+  display: block;
+  font-size: 12px;
+  color: #888888;
+  padding-right: 20px;
+}
+.content > .content-right .content-right-list > li > a:hover {
+  color: red;
+}
+.content > .content-right .content-right-list > li > p {
+  font-size: 12px;
+  color: #d41c4f;
+  line-height: 30px;
+}
+.content > .content-right .content-right-list > li > p > span {
+  color: #b0b0b0;
+  text-decoration: line-through;
+}
+
+/*# sourceMappingURL=list.css.map */

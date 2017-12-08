@@ -1,0 +1,102 @@
+#xianlink-ul {
+  display: none;
+}
+
+/****************content************************************/
+.content {
+  min-height: 200px;
+}
+.content .content-1-wrap {
+  height: 637px;
+  background: #f4f4f4;
+}
+.content .content-1-wrap .content-1 {
+  height: 637px;
+  width: 960px;
+  margin: 0 auto;
+}
+.content .content-1-wrap .content-1 > p {
+  line-height: 37px;
+  font-size: 14px;
+  padding-left: 5px;
+}
+.content .content-1-wrap .content-1 > .content-1-con {
+  height: 600px;
+}
+.content .content-1-wrap .content-1 > .content-1-con > .content-1-con-left {
+  height: 600px;
+  float: left;
+  width: 490px;
+  position: relative;
+}
+.content .content-1-wrap .content-1 > .content-1-con > .content-1-con-left > .con-MirrorBox {
+  width: 490px;
+  height: 500px;
+  position: relative;
+}
+.content .content-1-wrap .content-1 > .content-1-con > .content-1-con-left > .con-MirrorBox > img {
+  width: 490px;
+  height: 500px;
+}
+.content .content-1-wrap .content-1 > .content-1-con > .content-1-con-left > .con-MirrorBox > #bigMirror {
+  position: absolute;
+  display: none;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  border: 1px solid red;
+  background: rgba(255, 255, 255, 0.4);
+}
+.content .content-1-wrap .content-1 > .content-1-con > .content-1-con-left > #bigShow {
+  display: none;
+  width: 440px;
+  height: 462px;
+  border: 1px solid #ccc;
+  position: absolute;
+  left: 520px;
+  top: 10px;
+  background: #fff;
+  overflow: hidden;
+}
+.content .content-1-wrap .content-1 > .content-1-con > .content-1-con-left > #bigShow > img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 980px;
+  height: 1000px;
+}
+.content .content-1-wrap .content-1 > .content-1-con > .content-1-con-left > .xlink-img {
+  height: 72px;
+  padding: 0 10px;
+  margin-top: 20px;
+}
+.content .content-1-wrap .content-1 > .content-1-con > .content-1-con-left > .xlink-img > li {
+  float: left;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ccc;
+  margin-right: 16px;
+}
+.content .content-1-wrap .content-1 > .content-1-con > .content-1-con-left > .xlink-img > li:hover {
+  border-color: red;
+}
+.content .content-1-wrap .content-1 > .content-1-con > .content-1-con-left > .xlink-img > li > img {
+  width: 60px;
+  height: 60px;
+}
+.content .content-1-wrap .content-1 > .content-1-con > .content-1-con-right {
+  float: right;
+  height: 600px;
+  width: 442px;
+  background: pink;
+}
+.content .content-main {
+  min-height: 100px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 960px;
+  background: blue;
+}
+
+/*# sourceMappingURL=info.css.map */
