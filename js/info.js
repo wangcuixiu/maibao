@@ -4,9 +4,9 @@ showImg();
 function showImg(){
 	let lis=$("#xlink-img").children();
 	for(let i=0;i<lis.length;i++){
-		console.log(lis)
+		
 		$(lis[i]).mouseenter(function(){
-			console.log(1)
+			
 			let imgsSrc=$(this).children("img").attr("src");
 			$("#m-img").attr("src",imgsSrc);
 		});
@@ -29,9 +29,10 @@ function showMirror(){
 		$("#bigMirror").css("display","block");
 		$("#bigShow").css("display","block");
 
-		console.log(MirrorBox.offsetWidth)
+		
 		let left1 = e.pageX-content1.offsetLeft-100;
           let top1 =  e.pageY-content1.offsetTop-100;
+
           if(left1<0){
               left1=0;
           }else if(left1>MirrorBox.offsetWidth-200){
@@ -55,3 +56,20 @@ function showMirror(){
         bigShow.style.display="none";
     });
 }
+//颜色选择效果
+showColor()
+function showColor(){
+	let lis=$("#right-color").children();
+	for(let i=0;i<lis.length;i++){
+		$(lis[i]).click(function(){
+			//点击商务时候先让所有的li 的颜色为原来的颜色
+			for(let j=0;j<lis.length;j++){
+				$(lis[j]).css("borderColor","#ccc");
+			}
+
+			$(this).css("borderColor","#d41c50");
+		});
+	}
+}
+
+
