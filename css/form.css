@@ -1,0 +1,420 @@
+#xianlink-ul {
+  display: none; }
+
+body, html {
+  height: 100%; }
+
+.top-wrap-1 {
+  height: 90px;
+  border-bottom: 2px solid #ed1c22; }
+  .top-wrap-1 .top-1 {
+    height: 90px;
+    width: 962px;
+    margin: 0 auto; }
+    .top-wrap-1 .top-1 > h1 {
+      float: left;
+      margin-top: 30px; }
+    .top-wrap-1 .top-1 > div:nth-of-type(1) {
+      float: left;
+      height: 50px;
+      width: 250px;
+      padding-top: 40px;
+      margin-left: 30px;
+      line-height: 20px;
+      font-size: 24px; }
+      .top-wrap-1 .top-1 > div:nth-of-type(1) > span {
+        font-size: 12px; }
+    .top-wrap-1 .top-1 > .rate {
+      float: right;
+      height: 70px;
+      padding-top: 20px; }
+
+/**************************box**********************************/
+#box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  display: none; }
+  #box #content-box {
+    height: 350px;
+    width: 532px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    #box #content-box > h4 {
+      line-height: 40px;
+      font-size: 16px;
+      color: #fff;
+      padding-left: 20px;
+      background: #e33d53; }
+    #box #content-box > div {
+      height: 37px;
+      font-size: 14px; }
+      #box #content-box > div > span {
+        color: red; }
+      #box #content-box > div:nth-of-type(1) {
+        margin-top: 20px;
+        padding-left: 80px; }
+        #box #content-box > div:nth-of-type(1) > select {
+          width: 85px;
+          height: 22px; }
+      #box #content-box > div:nth-of-type(2) {
+        padding-left: 38px; }
+        #box #content-box > div:nth-of-type(2) > input {
+          width: 317px;
+          height: 22px; }
+      #box #content-box > div:nth-of-type(3) {
+        padding-left: 24px; }
+        #box #content-box > div:nth-of-type(3) > input {
+          width: 140px;
+          height: 22px; }
+      #box #content-box > div:nth-of-type(4) {
+        padding-left: 65px; }
+        #box #content-box > div:nth-of-type(4) > input {
+          width: 140px;
+          height: 22px; }
+      #box #content-box > div:nth-of-type(5) {
+        padding-left: 110px; }
+        #box #content-box > div:nth-of-type(5) > a {
+          float: left;
+          width: 80px;
+          line-height: 30px;
+          color: #fff;
+          text-align: center; }
+          #box #content-box > div:nth-of-type(5) > a:nth-child(1) {
+            background: #e33d53; }
+          #box #content-box > div:nth-of-type(5) > a:nth-child(2) {
+            background: #c0c0c0;
+            margin-left: 20px; }
+
+/**********************************box-1***************************/
+/**************************box**********************************/
+#box-1 {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  display: none; }
+  #box-1 #content-box-1 {
+    height: 350px;
+    width: 532px;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto; }
+    #box-1 #content-box-1 > h4 {
+      line-height: 40px;
+      font-size: 16px;
+      color: #fff;
+      padding-left: 20px;
+      background: #e33d53; }
+    #box-1 #content-box-1 > div {
+      height: 37px;
+      font-size: 14px; }
+      #box-1 #content-box-1 > div > span {
+        color: red; }
+      #box-1 #content-box-1 > div:nth-of-type(1) {
+        margin-top: 20px;
+        padding-left: 80px; }
+        #box-1 #content-box-1 > div:nth-of-type(1) > select {
+          width: 85px;
+          height: 22px; }
+      #box-1 #content-box-1 > div:nth-of-type(2) {
+        padding-left: 38px; }
+        #box-1 #content-box-1 > div:nth-of-type(2) > input {
+          width: 317px;
+          height: 22px; }
+      #box-1 #content-box-1 > div:nth-of-type(3) {
+        padding-left: 24px; }
+        #box-1 #content-box-1 > div:nth-of-type(3) > input {
+          width: 140px;
+          height: 22px; }
+      #box-1 #content-box-1 > div:nth-of-type(4) {
+        padding-left: 65px; }
+        #box-1 #content-box-1 > div:nth-of-type(4) > input {
+          width: 140px;
+          height: 22px; }
+      #box-1 #content-box-1 > div:nth-of-type(5) {
+        padding-left: 110px; }
+        #box-1 #content-box-1 > div:nth-of-type(5) > a {
+          float: left;
+          width: 80px;
+          line-height: 30px;
+          color: #fff;
+          text-align: center; }
+          #box-1 #content-box-1 > div:nth-of-type(5) > a:nth-child(1) {
+            background: #e33d53; }
+          #box-1 #content-box-1 > div:nth-of-type(5) > a:nth-child(2) {
+            background: #c0c0c0;
+            margin-left: 20px; }
+
+/**************************content*****************************/
+.content-wrap {
+  background: #f0f0f0;
+  padding: 24px 0 24px 0; }
+  .content-wrap > .content {
+    padding: 15px;
+    min-height: 200px;
+    overflow: hidden;
+    background: #fff;
+    width: 963px;
+    margin: 0 auto; }
+    .content-wrap > .content .content-top {
+      min-height: 137px; }
+      .content-wrap > .content .content-top > h4 {
+        line-height: 34px;
+        background: #f0f0f0;
+        padding-left: 20px;
+        font-size: 14px; }
+      .content-wrap > .content .content-top > .addressBox {
+        min-height: 1px;
+        overflow: hidden;
+        margin-top: 15px; }
+        .content-wrap > .content .content-top > .addressBox > ul {
+          height: 28px;
+          font-size: 12px;
+          padding-left: 20px;
+          padding-right: 20px;
+          margin-bottom: 10px; }
+          .content-wrap > .content .content-top > .addressBox > ul > li {
+            line-height: 28px; }
+            .content-wrap > .content .content-top > .addressBox > ul > li > input {
+              margin: 0 3px; }
+            .content-wrap > .content .content-top > .addressBox > ul > li > span:nth-of-type(6) {
+              color: #8d889a; }
+            .content-wrap > .content .content-top > .addressBox > ul > li > b {
+              float: right;
+              font-weight: 100; }
+              .content-wrap > .content .content-top > .addressBox > ul > li > b > .updata {
+                color: #319ae1;
+                font-size: 12px;
+                margin-right: 5px; }
+                .content-wrap > .content .content-top > .addressBox > ul > li > b > .updata:hover {
+                  text-decoration: underline; }
+              .content-wrap > .content .content-top > .addressBox > ul > li > b > .delete {
+                font-size: 12px;
+                color: #9195a8; }
+                .content-wrap > .content .content-top > .addressBox > ul > li > b > .delete:hover {
+                  text-decoration: underline; }
+      .content-wrap > .content .content-top > .addAddress {
+        line-height: 26px;
+        width: 94px;
+        text-align: center;
+        border: 1px solid #ccc;
+        font-size: 12px;
+        color: #333;
+        margin-top: 20px;
+        margin-left: 70px;
+        cursor: pointer; }
+        .content-wrap > .content .content-top > .addAddress > span {
+          color: #d7204e;
+          font-size: 16px; }
+    .content-wrap > .content > .pay {
+      height: 490px;
+      margin-top: 30px; }
+      .content-wrap > .content > .pay > h4 {
+        line-height: 34px;
+        background: #f0f0f0;
+        padding-left: 20px;
+        font-size: 14px; }
+      .content-wrap > .content > .pay > .pay-main {
+        height: 383px;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+        padding: 20px 10px 0;
+        font-size: 12px; }
+        .content-wrap > .content > .pay > .pay-main > ul > li {
+          border-bottom: 1px solid #ccc; }
+          .content-wrap > .content > .pay > .pay-main > ul > li > div {
+            float: left;
+            margin-top: 10px; }
+            .content-wrap > .content > .pay > .pay-main > ul > li > div > img {
+              margin-top: 10px;
+              float: right; }
+            .content-wrap > .content > .pay > .pay-main > ul > li > div > input {
+              margin-right: 10px;
+              margin-top: 20px; }
+            .content-wrap > .content > .pay > .pay-main > ul > li > div:nth-child(1) {
+              margin-right: 30px; }
+          .content-wrap > .content > .pay > .pay-main > ul > li:nth-of-type(1) {
+            height: 70px; }
+          .content-wrap > .content > .pay > .pay-main > ul > li:nth-of-type(2) {
+            height: 80px; }
+            .content-wrap > .content > .pay > .pay-main > ul > li:nth-of-type(2) > div > input {
+              margin-top: 28px; }
+          .content-wrap > .content > .pay > .pay-main > ul > li:nth-of-type(3) {
+            border: 0; }
+            .content-wrap > .content > .pay > .pay-main > ul > li:nth-of-type(3) > div {
+              margin-top: 30px; }
+              .content-wrap > .content > .pay > .pay-main > ul > li:nth-of-type(3) > div:nth-child(2) {
+                margin-right: 20px; }
+                .content-wrap > .content > .pay > .pay-main > ul > li:nth-of-type(3) > div:nth-child(2) > img {
+                  margin-top: 5px; }
+              .content-wrap > .content > .pay > .pay-main > ul > li:nth-of-type(3) > div:nth-child(3) {
+                margin-right: 20px; }
+                .content-wrap > .content > .pay > .pay-main > ul > li:nth-of-type(3) > div:nth-child(3) > img {
+                  margin-top: 5px; }
+              .content-wrap > .content > .pay > .pay-main > ul > li:nth-of-type(3) > div:nth-child(4) > img {
+                margin-top: 5px; }
+        .content-wrap > .content > .pay > .pay-main > ul > img {
+          margin-top: 20px; }
+    .content-wrap > .content > .content-main {
+      min-height: 200px;
+      background: #fff;
+      padding: 16px; }
+      .content-wrap > .content > .content-main > h4 {
+        line-height: 34px;
+        background: #f0f0f0;
+        padding-left: 20px;
+        font-size: 14px; }
+      .content-wrap > .content > .content-main > ul:nth-of-type(1) {
+        height: 35px;
+        padding-top: 10px;
+        border-bottom: 1px solid #666; }
+        .content-wrap > .content > .content-main > ul:nth-of-type(1) li {
+          float: left;
+          line-height: 35px;
+          text-align: right;
+          font-size: 12px;
+          width: 100px;
+          font-weight: 900; }
+      .content-wrap > .content > .content-main > .list {
+        min-height: 10px; }
+        .content-wrap > .content > .content-main > .list > ul {
+          padding: 20px;
+          border-bottom: 1px dashed #ccc;
+          height: 78px; }
+          .content-wrap > .content > .content-main > .list > ul > li {
+            height: 98px;
+            float: left;
+            text-align: right;
+            font-size: 12px;
+            width: 97px;
+            line-height: 80px; }
+            .content-wrap > .content > .content-main > .list > ul > li:nth-child(1) {
+              width: 500px; }
+              .content-wrap > .content > .content-main > .list > ul > li:nth-child(1) > img {
+                float: left;
+                width: 89px;
+                height: 96px; }
+              .content-wrap > .content > .content-main > .list > ul > li:nth-child(1) > span {
+                color: #666;
+                float: left;
+                font-size: 12px;
+                font-weight: 900; }
+              .content-wrap > .content > .content-main > .list > ul > li:nth-child(1) > .title {
+                margin-top: -5px; }
+              .content-wrap > .content > .content-main > .list > ul > li:nth-child(1) > .id {
+                margin-top: 15px;
+                margin-left: -130px; }
+            .content-wrap > .content > .content-main > .list > ul > li:nth-child(2) {
+              padding-right: 7px;
+              width: 90px; }
+            .content-wrap > .content > .content-main > .list > ul > li:nth-child(3) {
+              padding-left: 35px;
+              width: 62px; }
+              .content-wrap > .content > .content-main > .list > ul > li:nth-child(3) > button {
+                float: left;
+                width: 9px;
+                line-height: 9px;
+                font-size: 8px;
+                border: 1px solid #ccc;
+                margin-top: 35px;
+                background: #fff;
+                outline: none; }
+              .content-wrap > .content > .content-main > .list > ul > li:nth-child(3) > span {
+                float: left;
+                width: 30px;
+                line-height: 18px;
+                text-align: center;
+                border: 1px solid #ccc;
+                margin: 30px 6px 0; }
+            .content-wrap > .content > .content-main > .list > ul > li:nth-child(4) {
+              color: #ef1c22;
+              font-size: 12px;
+              font-weight: 900; }
+            .content-wrap > .content > .content-main > .list > ul > li:nth-child(5) {
+              padding-right: 7px;
+              width: 90px; }
+              .content-wrap > .content > .content-main > .list > ul > li:nth-child(5) > .delete {
+                border: 0;
+                outline: none;
+                background: #fff;
+                color: #666; }
+      .content-wrap > .content > .content-main > .content-main-bottom {
+        height: 314px; }
+        .content-wrap > .content > .content-main > .content-main-bottom > ul {
+          height: 334px; }
+          .content-wrap > .content > .content-main > .content-main-bottom > ul > li {
+            float: right;
+            height: 334px;
+            width: 280px;
+            padding-top: 85px;
+            height: 249px; }
+            .content-wrap > .content > .content-main > .content-main-bottom > ul > li > ul {
+              padding-right: 20px; }
+              .content-wrap > .content > .content-main > .content-main-bottom > ul > li > ul > li {
+                line-height: 30px;
+                font-size: 12px;
+                color: #666;
+                text-align: right; }
+    .content-wrap > .content > .four {
+      height: 256px;
+      border-bottom: 1px solid #ccc; }
+      .content-wrap > .content > .four > h4 {
+        line-height: 34px;
+        background: #f0f0f0;
+        padding-left: 20px;
+        font-size: 14px; }
+      .content-wrap > .content > .four > div > h4 {
+        line-height: 20px;
+        margin-top: 20px;
+        font-size: 14px;
+        margin-bottom: 10px; }
+      .content-wrap > .content > .four > div > textarea {
+        width: 381px;
+        height: 76px;
+        margin-left: 20px; }
+      .content-wrap > .content > .four > div > p {
+        font-size: 12px;
+        color: #333;
+        margin-top: 10px;
+        margin-left: 20px; }
+    .content-wrap > .content > .five {
+      height: 204px;
+      padding-top: 15px; }
+      .content-wrap > .content > .five > div {
+        height: 75px;
+        background: #fffdee;
+        border: 1px solid #ccc;
+        font-size: 12px;
+        padding: 10px; }
+        .content-wrap > .content > .five > div > p {
+          margin-bottom: 5px;
+          color: #333; }
+          .content-wrap > .content > .five > div > p span {
+            color: #666; }
+      .content-wrap > .content > .five > a {
+        float: right;
+        width: 209px;
+        height: 40px;
+        background: #d00202;
+        line-height: 40px;
+        text-align: center;
+        font-size: 16px;
+        color: #fff;
+        border-radius: 5px;
+        margin-top: 50px;
+        box-shadow: 2px 0 2px #d00202; }
+
+/*# sourceMappingURL=form.css.map */

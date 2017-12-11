@@ -1,0 +1,192 @@
+#xianlink-ul {
+  display: none; }
+
+/****************big-banner*******************/
+#banner {
+  height: 440px;
+  top: -2px;
+  position: relative;
+  width: 100%; }
+  #banner > #img {
+    width: 100%;
+    position: relative;
+    height: 440px;
+    overflow: hidden; }
+    #banner > #img > img {
+      position: absolute;
+      left: 50%;
+      top: 0px;
+      margin-left: -960px;
+      display: none;
+      opacity: 0; }
+    #banner > #img > .active {
+      display: block;
+      opacity: 1; }
+  #banner .control {
+    width: 704px;
+    height: 36px;
+    position: absolute;
+    left: 50%;
+    margin-left: -302px;
+    top: 50%;
+    margin-top: -18px; }
+    #banner .control > span {
+      position: absolute;
+      top: 0;
+      line-height: 36px;
+      width: 32px;
+      background: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-size: 30px;
+      color: #fff;
+      cursor: pointer;
+      user-select: none; }
+    #banner .control > #left {
+      left: 0; }
+    #banner .control > #right {
+      right: 0; }
+  #banner > .btn {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 150px;
+    cursor: pointer;
+    z-index: 55;
+    border-radius: 10px; }
+    #banner > .btn > li {
+      float: left;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #777777;
+      margin: 4px 5px; }
+    #banner > .btn .black {
+      background: red; }
+
+.content {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 200px;
+  padding-top: 4px; }
+  .content > .content-1 {
+    height: 240px;
+    border: 1px solid #ccc; }
+    .content > .content-1 > h5 {
+      height: 47px;
+      padding-left: 20px; }
+    .content > .content-1 > ul {
+      height: 196px; }
+      .content > .content-1 > ul > li {
+        float: left;
+        width: 198px;
+        height: 94px;
+        background: #e8e8e8;
+        border-right: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        text-align: center;
+        font-size: 14px;
+        cursor: pointer; }
+        .content > .content-1 > ul > li > p:nth-child(1) {
+          margin-top: 25px;
+          margin-bottom: 5px; }
+  .content > .content-2 {
+    height: 960px;
+    margin-top: 30px; }
+    .content > .content-2 > h5 {
+      height: 77px; }
+    .content > .content-2 > div {
+      height: 400px;
+      position: relative;
+      left: 0;
+      top: 0; }
+      .content > .content-2 > div > .img {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+        position: relative; }
+        .content > .content-2 > div > .img > img {
+          width: 100%;
+          height: 400px;
+          display: none;
+          opacity: 0;
+          position: absolute;
+          left: 0;
+          top: 0; }
+        .content > .content-2 > div > .img > .active {
+          display: block;
+          opacity: 1; }
+      .content > .content-2 > div .control1 {
+        width: 1200px;
+        height: 60px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -30px; }
+        .content > .content-2 > div .control1 > span {
+          position: absolute;
+          top: 0;
+          line-height: 60px;
+          width: 32px;
+          background: rgba(0, 0, 0, 0.4);
+          text-align: center;
+          font-size: 30px;
+          color: #fff;
+          cursor: pointer;
+          user-select: none; }
+        .content > .content-2 > div .control1 > .left {
+          left: 0; }
+        .content > .content-2 > div .control1 > .right {
+          right: 0; }
+      .content > .content-2 > div > .btn1 {
+        width: 120px;
+        height: 20px;
+        left: 50%;
+        margin-left: -60px;
+        bottom: 20px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 55;
+        border-radius: 10px; }
+        .content > .content-2 > div > .btn1 > li {
+          float: left;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          background: #777777;
+          margin: 4px 5px; }
+        .content > .content-2 > div > .btn1 .black {
+          background: red; }
+    .content > .content-2 > .goodsUl {
+      margin-top: 10px;
+      height: 480px;
+      /* width: 1195px; */
+      border-bottom: 1px solid #e5e5e5;
+      border-left: 1px solid #e5e5e5; }
+      .content > .content-2 > .goodsUl > li {
+        float: left;
+        width: 238px;
+        height: 240px;
+        border-top: 1px solid #e5e5e5;
+        border-right: 1px solid #e5e5e5;
+        text-align: center; }
+        .content > .content-2 > .goodsUl > li a:nth-of-type(1) {
+          font-size: 12px;
+          display: block; }
+          .content > .content-2 > .goodsUl > li a:nth-of-type(1) img {
+            margin: 0 auto; }
+        .content > .content-2 > .goodsUl > li a:nth-of-type(2) {
+          font-size: 12px;
+          color: #000; }
+          .content > .content-2 > .goodsUl > li a:nth-of-type(2):hover {
+            color: red;
+            text-decoration: underline; }
+        .content > .content-2 > .goodsUl > li > p {
+          font-size: 10px;
+          margin-top: 7px;
+          font-weight: 900; }
+          .content > .content-2 > .goodsUl > li > p > span {
+            color: #666;
+            text-decoration: line-through; }
+
+/*# sourceMappingURL=Playbyoneseself.css.map */
