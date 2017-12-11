@@ -46,7 +46,6 @@ function showShopping(){
 	$(".list").on("click",".delete",function(){
 		alert("确定要删除此商品吗？");
 		let dom=$(this).parent().parent("ul")[0];
-		console.log();
 		$(".list")[0].removeChild(dom);
 		calculate();
 		

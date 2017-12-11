@@ -47,10 +47,11 @@ function showList(){
 		let imgli=$(lis[i]).children("ul").children();
 		for(let j=0;j<imgli.length;j++){
 			$(imgli[j]).mouseenter(function(){
+
 				//li里面的img的src
 				let src=$(imgli[j]).children().attr("src");
 				/*console.log(src);*/
-				$(lis[i]).children("img").attr("src",src);
+				$(lis[i]).children("a").children("img").attr("src",src);
 			});
 		}
 	}
