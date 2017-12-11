@@ -1,0 +1,97 @@
+#xianlink-ul {
+  display: none; }
+
+/************************content***************************/
+.content {
+  min-height: 200px;
+  background: #f0f0f0;
+  padding-bottom: 20px;
+  overflow: hidden; }
+  .content .content-main {
+    width: 962px;
+    margin: 20px  auto 0;
+    background: #fff;
+    height: 413px; }
+    .content .content-main > h5 {
+      line-height: 42px;
+      color: #000;
+      padding-left: 10px;
+      font-size: 14px;
+      border-bottom: 1px solid #cccccc; }
+    .content .content-main > form {
+      width: 523px;
+      margin: 0 auto;
+      height: 370px;
+      padding-left: 100px;
+      overflow: hidden; }
+      .content .content-main > form > div {
+        height: 47px;
+        font-size: 14px;
+        color: #4e4e4e; }
+        .content .content-main > form > div > span {
+          font-size: 12px;
+          color: red; }
+        .content .content-main > form > div > input {
+          height: 30px;
+          width: 230px;
+          margin-left: 10px;
+          outline: none; }
+        .content .content-main > form > div:nth-child(4) {
+          width: 426px; }
+          .content .content-main > form > div:nth-child(4) > span {
+            float: left;
+            margin-right: 13px;
+            margin-left: 12px;
+            margin-top: 9px;
+            color: #4e4e4e; }
+          .content .content-main > form > div:nth-child(4) .YZ {
+            float: left; }
+            .content .content-main > form > div:nth-child(4) .YZ > button {
+              width: 148px;
+              line-height: 36px;
+              background: #87b93c;
+              border: 0;
+              outline: none;
+              float: left;
+              margin-right: 4px; }
+              .content .content-main > form > div:nth-child(4) .YZ > button > a {
+                color: #fff;
+                font-size: 12px; }
+                .content .content-main > form > div:nth-child(4) .YZ > button > a:hover {
+                  text-decoration: underline; }
+            .content .content-main > form > div:nth-child(4) .YZ > input {
+              width: 86px;
+              height: 32px;
+              float: left;
+              margin-right: 4px; }
+            .content .content-main > form > div:nth-child(4) .YZ > div {
+              float: left; }
+            .content .content-main > form > div:nth-child(4) .YZ > .sjs {
+              width: 111px;
+              height: 33px;
+              border: 1px solid #ccc;
+              margin-right: 4px;
+              font-size: 25px;
+              color: #000;
+              background: #62c847;
+              text-align: center;
+              line-height: 33px;
+              display: none; }
+            .content .content-main > form > div:nth-child(4) .YZ > #showNumber {
+              line-height: 32px;
+              font-size: 12px;
+              display: none; }
+              .content .content-main > form > div:nth-child(4) .YZ > #showNumber > a {
+                color: red; }
+                .content .content-main > form > div:nth-child(4) .YZ > #showNumber > a:hover {
+                  text-decoration: underline; }
+            .content .content-main > form > div:nth-child(4) .YZ > .send {
+              display: none;
+              width: 70px;
+              line-height: 32px;
+              background: #ed1c24;
+              color: #fff;
+              text-align: center;
+              cursor: pointer; }
+
+/*# sourceMappingURL=reg.css.map */
