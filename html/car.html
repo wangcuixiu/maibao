@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="../css/public.css">
+    <link rel="stylesheet" type="text/css" href="../css/car.css">
+</head>
+<body>
+
+    <div id="rule-box">
+        <div id="list-box">
+            <h5>
+                <span>优惠卷/现金券使用规则</span>
+                <a href="#" id="close">&times;</a>
+            </h5>
+            <div>
+                1.每个订单限用一张优惠券或现金券；<br/>
+                2.优惠仅限在有效期内使用；<br/>
+                3.有m满额条件的优惠券，达到满额条件后方可使用；<br/>
+                4.优惠券不抵扣运费；<br/>
+                5.现金券当现金使用，无任何限制；<br/>
+                6.更多细则请查看帮助中心优惠券相关说明，点击查看<br/>
+                <a href="#" id="close">确定</a>
+            </div>
+        </div>
+    </div>
+    <!-------------fixed---------------------->
+    <ul class="fixedUl1">
+             <li id="fixed1-li-1">
+                <span></span>
+                <a href="javascript:;">
+                    回到顶部
+                </a>
+            </li>
+            <li id="fixed1-li-2">
+                <span></span>
+                <a href="javascript:;">
+                    在线咨询
+                </a>
+            </li>
+            <li id="fixed1-li-3">
+                <span></span>
+                <a href="#">
+                    去购物车
+                </a>
+            </li>
+            <li id="fixed1-li-4">
+                <span></span>
+                <a href="#">
+                   二维码
+                </a>
+            </li>
+    </ul>
+
+<!------------------top------------------------------>
+    <div class="top-wrap-1">
+        <div class="top-1">
+            <h1>
+                <a href="../index.html">
+                    <img src="../images/logo.png">
+                </a>
+            </h1>
+            <div>
+                购物车<br/>
+                <span>15294165568 欢迎你来到麦包包购物车</span>
+            </div>
+            <div class="rate">
+                <img src="../images/rate.jpg"/>
+            </div>
+        </div>
+    </div>
+    <!--------------content------------------>
+    <div class="content-wrap">
+        <div class="content">
+            <h5>
+                温馨提示： 
+                <span>加入购物车的商品无法为您保留库存，请及时下单购买，商品价格以订单提交时的价格为准。
+                </span>
+                <img src="../images/88.jpg"/>
+            </h5>
+            <div class="content-main">
+                <ul>
+                    <li style="width: 500px;text-align:center;">商品名称</li>
+                    <li>单价</li>
+                    <li>数量</li>
+                    <li>小计</li>
+                    <li>操作</li>
+                </ul>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <img src="../images/1a.jpg"/>
+                            <span class="title">[金狐狸]真皮蛇纹单肩包</span>
+                            <span class="id">1512007301</span>
+                        </li>
+                        <li>
+                            ￥<span class="price">89</span>.00
+                        </li>
+                        <li>
+                            <button class="jian">-</button>
+                            <span class="count">1</span>
+                            <button class="jia">+</button>
+                        </li>
+                         <li>
+                            ￥<span class="acountPrice">89</span>.00
+                        </li>
+                        <li>
+                            <button class="delete">删除</button>
+                        </li>
+                    </ul>
+                     <ul>
+                        <li>
+                            <img src="../images/2a.jpg"/>
+                            <span class="title">[金狐狸]真皮蛇纹单肩包</span>
+                            <span class="id">1512007301</span>
+                        </li>
+                        <li>
+                            ￥<span class="price">200</span>.00
+                        </li>
+                        <li>
+                            <button class="jian">-</button>
+                            <span class="count">1</span>
+                            <button class="jia">+</button>
+                        </li>
+                         <li>
+                            ￥<span class="acountPrice">200</span>.00
+                        </li>
+                        <li>
+                            <button class="delete">删除</button>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="../images/3a.jpg"/>
+                            <span class="title">[金狐狸]真皮蛇纹单肩包</span>
+                            <span class="id">1512007302</span>
+                        </li>
+                        <li>
+                            ￥<span class="price">198</span>.00
+                        </li>
+                        <li>
+                            <button class="jian">-</button>
+                            <span class="count">1</span>
+                            <button class="jia">+</button>
+                        </li>
+                         <li>
+                            ￥<span class="acountPrice">198</span>.00
+                        </li>
+                        <li>
+                            <button class="delete">删除</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-main-bottom">
+                    <ul>
+                        <li>
+                            <div>
+                                优惠券/现金券：<input type="text"/><button>使用</button><a id="rule" href="javascript:;">优惠卷/现金券使用规则</a>
+                            </div>
+                           <div>
+                             麦豆: <input type="text" value="0"/> <span>0 个麦豆</span>  -￥0.00
+                           </div>
+                           <h4>您有麦豆 0 个，请输入想使用的麦豆数（10个起用，只可能使用10的整倍数,最多使用50个），不使用请填0
+                                <img src="../images/uu.jpg"/>
+                           </h4>
+                        </li>
+
+                        <li>
+                            <ul>
+                                <li>
+                                    商品件数：<span id="allCount">3</span>件
+                                </li>
+                                <li>
+                                    商品总金额(不含运费)：￥<span id="allMoney">487.00</span>
+                                </li>
+                                <li>
+                                    麦豆抵扣 : <span>-￥0.00</span>
+                                </li>
+                                <li>
+                                    运费 :￥ <span>0.00</span>
+                                </li>
+                                <li>
+                                    应付金额 :￥<span id="sureMoney" style="color:#ed1c22;font-size:18px;">487.00</span>
+                                </li>
+                            </ul>
+                            <a href="javascript:;">￥去结算</a>
+                        </li>
+                    </ul>
+                    <hr/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="car-bottom-wrap">
+         <div class="car-bottom">
+            <img src="../images/0p.jpg"/>   
+        </div>
+    </div>
+    <div class="car-footer">
+        ©2007-2012 Mbaobao All Rights Reserved. 嘉兴市麦宝科技信息有限公司 版权所有，禁止非法复制 经营许可证编号：浙B2-20100425
+    </div>
+   
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/public.js"></script>
+<script type="text/javascript" src="../js/car.js"></script>
+   

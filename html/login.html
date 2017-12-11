@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+</head>
+<body>
+    <div id="showPassError">
+        <div>
+            <h6>消息</h6>
+            <div>
+                密码不正确<br/>
+                <button id="closebtn">确认</button>
+            </div>
+        </div>
+    </div>
+    <div class="top-wrap">
+        <div class="top">
+            <a href="../index.html">
+                <img src="../images/logo.png"/>
+            </a>
+            <span>登录时遇到问题或有改进建议 <a href="javascript:;">点击这里反馈>></a></span>
+        </div>
+        <div class="content">
+            <img src="../images/login.jpg"/>
+            <form>
+                <h5>
+                    用户登录 <span>现在还不是麦包包会员? <a href="javascript:;">立即注册</a></span>
+                </h5>
+                <div style="margin-left: 13px;">
+                    用户名：<input id="name" type="text"/><span id="showError"></span>
+                </div>
+                <div>
+                    登录密码：<input id="pass" type="password"/>
+                    <a id="forget" href="javascript">忘记密码?</a>
+                </div>
+                <a id="loginBtn" href="javascript:;">马上登录</a>
+                <p>使用合作网站帐号登录麦包包</p>
+                <ul>
+                    <li style="padding:0;">
+                        <a href="javascript:;"><img style="width: 66px;" src="../images/zz.jpg"/></a>
+                    </li>
+                    <li style="background: url(../images/qq.jpg) no-repeat center left;">
+                        <a href="javascript:;">QQ |</a>
+                    </li>
+                    <li style="background: url(../images/ww.jpg) no-repeat center left;">
+                        <a href="javascript:;">新浪微博 |</a>
+                    </li>
+                     <li style="background: url(../images/yy.jpg) no-repeat center left;">
+                        <a href="javascript:;">中国移动 |&nbsp;</a>
+                    </li>
+                     <li style="background: url(../images/wx.jpg) no-repeat center left;">
+                        <a href="javascript:;">微信</a>
+                    </li>
+
+                </ul>
+            </form>
+
+        </div>
+         <p>© 2007-2013 Mbaobao All Rights Reserved. 嘉兴市麦包包网络科技有限公司 版权所有，禁止非法复制 经营许可证编号：浙B2-20100425</p>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/login.js"></script>
