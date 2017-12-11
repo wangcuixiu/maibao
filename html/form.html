@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单页</title>
+    <link rel="stylesheet" type="text/css" href="../css/public.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+</head>
+<body>
+    <!-------------fixed---------------------->
+    <ul class="fixedUl1">
+             <li id="fixed1-li-1">
+                <span></span>
+                <a href="javascript:;">
+                    回到顶部
+                </a>
+            </li>
+            <li id="fixed1-li-2">
+                <span></span>
+                <a href="javascript:;">
+                    在线咨询
+                </a>
+            </li>
+            <li id="fixed1-li-3">
+                <span></span>
+                <a href="#">
+                    去购物车
+                </a>
+            </li>
+            <li id="fixed1-li-4">
+                <span></span>
+                <a href="#">
+                   二维码
+                </a>
+            </li>
+    </ul>
+
+    <!-----------------------弹出填写地址的box ------------------------------>
+    <div id="box">
+        <div id="content-box">
+            <h4>请填写收货地址</h4>
+            <div>
+                <span>*</span>
+                省 <select id="province">
+                    <option>北京</option>
+                </select>
+                市 <select id="city">
+                    <option>北京市</option>
+                </select> 
+                区/县 <select>
+                    <option>东城区</option>
+                </select>
+            </div>
+             <div>
+                <span>*</span>
+                街道地址 <input type="text" id="streetAddress"/>
+            </div>
+            
+            <div>
+                <span>*</span>
+                收货人姓名 <input type="text" id="name"/>
+            </div>
+            <div>
+                <span>*</span>
+               手机 <input type="text" id="phoneNumber"/>
+            </div>
+            <div>
+                <a href="javascript:;" id="sure">确定</a>
+                <a href="javascript:;">取消</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!--------------------弹出修改地址的框---------------------------------->
+    <!-----------------------弹出填写地址的box ------------------------------>
+    <div id="box-1">
+        <div id="content-box-1">
+            <h4>请填写收货地址</h4>
+            <div>
+                <span>*</span>
+                省 <select id="province-1">
+                    <option>北京</option>
+                </select>
+                市 <select id="city-1">
+                    <option>北京市</option>
+                </select> 
+                区/县 <select>
+                    <option>东城区</option>
+                </select>
+            </div>
+             <div>
+                <span>*</span>
+                街道地址 <input type="text" id="streetAddress-1"/>
+            </div>
+            
+            <div>
+                <span>*</span>
+                收货人姓名 <input type="text" id="name-1"/>
+            </div>
+            <div>
+                <span>*</span>
+               手机 <input type="text" id="phoneNumber-1"/>
+            </div>
+            <div>
+                <a href="javascript:;" id="sure-1">确定</a>
+                <a href="javascript:;">取消</a>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+
+
+    <!------------------top------------------------------>
+    <div class="top-wrap-1">
+        <div class="top-1">
+            <h1>
+                <a href="../index.html">
+                    <img src="../images/logo.png">
+                </a>
+            </h1>
+            <div>
+                购物车<br/>
+                <span>15294165568 欢迎你来到麦包包购物车</span>
+            </div>
+            <div class="rate">
+                <img src="../images/rate.jpg"/>
+            </div>
+        </div>
+    </div>
+
+<!---------------------content---------------------->
+    <div class="content-wrap">
+        <div class="content">
+            <div class="content-top">
+                <h4>1. 填写收货地址</h4>
+                <div class="addressBox" id="addressBox">
+                    <ul>
+                        <li>
+                            寄送至 <input type="radio" checked="checked"/> 
+                            <span class="pro">陕西省</span>-
+                            <span class="cit">西安市</span>-
+                            <span>新城区</span>
+                            <span class="street">新城区</span>  
+                            <span class="user">王翠秀</span> 
+                            <span class="phNumber">15294165568</span>
+                            <b>
+                                <a class="updata" href="javascript:;">修改地址</a>
+                                <a class="delete" href="javascript:;">删除</a>
+                            </b>
+                        </li>
+                    </ul>   
+
+                </div>
+
+                <div class="addAddress" id="addAddress">
+                    <span>+</span> 使用新地址
+                </div>
+
+            </div>
+            <div class="pay">
+                <h4>2.选择支付方式</h4>
+                <div class="pay-main">
+                    支持以下在线支付平台支付：
+                    <ul>
+                        <li>
+                            <div>
+                               <input type="radio" checked="checked" name="payWey"/><img src="../images/l1.jpg"/> 
+                            </div>
+                            <div>
+                               <input type="radio" name="payWey"/><img src="../images/l2.jpg"/> 
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                               <input type="radio" name="payWey"/><img src="../images/l3.jpg"/> 
+                            </div>
+                        </li>
+                        <img src="../images/l4.jpg"/>
+                         <li>
+                            <div>
+                               <input type="radio" name="payWey"/><img src="../images/l1.jpg"/> 
+                            </div>
+                            <div>
+                               <input type="radio" name="payWey"/><img src="../images/l5.jpg"/> 
+                            </div>
+                            <div>
+                               <input type="radio" name="payWey"/><img src="../images/l6.jpg"/> 
+                            </div>
+                            <div>
+                               <input type="radio" name="payWey"/><img src="../images/l7.jpg"/> 
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content-main">
+                <h4>3.商品清单</h4>
+                <ul>
+                    <li style="width: 500px;text-align:center;">商品名称</li>
+                    <li>单价</li>
+                    <li>数量</li>
+                    <li>小计</li>
+                </ul>
+                <div class="list">
+                    <ul>
+                        <li>
+                            <img src="../images/1a.jpg"/>
+                            <span class="title">[金狐狸]真皮蛇纹单肩包</span>
+                            <span class="id">1512007301</span>
+                        </li>
+                        <li>
+                            ￥<span class="price">89</span>.00
+                        </li>
+                        <li>
+                            <span class="count">1</span>
+                        </li>
+                         <li>
+                            ￥<span class="acountPrice">89</span>.00
+                        </li>
+                    </ul>
+                     
+                    
+                </div>
+                <div class="content-main-bottom">
+                    <ul>
+                        <li>
+                            <ul>
+                                <li>
+                                    商品件数：<span id="allCount">3</span>件
+                                </li>
+                                <li>
+                                    商品总金额(不含运费)：￥<span id="allMoney">487.00</span>
+                                </li>
+                                <li>
+                                    麦豆抵扣 : <span>-￥0.00</span>
+                                </li>
+                                <li>
+                                    运费 :￥ <span>0.00</span>
+                                </li>
+                                <li>
+                                    应付金额 :￥<span id="sureMoney" style="color:#ed1c22;font-size:18px;">487.00</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="four">
+                <h4>4.留言</h4>
+                <div>
+                    <h4>订单留言</h4>
+                    <textarea></textarea>
+                    <p>字数请控制在50以内</p>
+                </div>
+            </div>
+            <div class="five">
+                <div>
+                    <p>应付金额： <b style="color:red">￥79.00</b></p>
+                    <p>配送至：<span>陕西省-西安市-新城区 新城区</span></p>
+                    <p>收货人：<span>王翠秀 收 15294165568</span></p>
+                </div>
+                <a href="javascript:;">确认无误，后提交</a>
+            </div>
+        </div>
+    </div>
+
+
+
+         <!--------------------------footer------------------------------------>
+     <footer>
+<!--------------------------footer-1------------------------------------>
+        <div class="footer-1">
+            <ul class="er">
+                <li style="padding-top: 20px;margin-left: 20px;text-align: center;">把麦包包<br/>装进口袋</li>
+                <li>
+                    <img src="../images/pone_code.jpg"/>
+                    手机版
+                </li>
+                <li>
+                    <img src="../images/wei_code.jpg"/>
+                    微信
+                </li>
+            </ul>
+            <ul class="weixin">
+                <li style="margin-left: 50px;border-left:0; ">关注麦包包:</li>
+                <li id="weixin">
+                    <a href="javascript:;">
+                        <img src="../images/weixin_p.jpg"/>
+                    </a>
+                    <img src="../images/weixin.png"/>
+                </li>
+                 <li>
+                    <a href="javascript:;"><img src="../images/web_p.jpg" title="麦包包腾讯微博" /></a>
+                </li>
+                 <li>
+                    <a href="javascript:;"><img src="../images/weibo_p.jpg" title="麦包包新浪微博" /></a>
+                </li>
+            </ul>
+        </div>
+
+    <!-------------------------footer-2---------------------------------->
+        <div class="footer-2">
+            <ul>
+                <li>
+                    <a style="background:url(../images/p1.jpg) no-repeat center left;" href="javascript:;">每周上新</a>
+                </li>
+                <li>
+                    <a style="background:url(../images/p2.jpg) no-repeat center left;" href="javascript:;">品质保证</a>
+                </li>
+                <li>
+                    <a style="background:url(../images/p3.jpg) no-repeat center left;" href="javascript:;">10天无条件退换</a>
+                </li>
+                <li style="background:0;">
+                    <a style="background:url(../images/p4.jpg) no-repeat center left;" href="javascript:;">7天价格保护</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <!-----------------bottom-------------------------------->
+    <div class="bottom-wrap">
+        <ul class="bottom">
+            <li>
+                <a style="color:#000;" href="javascript:;">关于麦包包</a><br/>
+                <a href="javascript:;">友情链接</a>
+            </li>
+            <li>
+                <a style="color:#000;" href="javascript:;">新手课堂</a><br/>
+                <a href="javascript:;">新用户注册</a><br/>
+                <a href="javascript:;">如何购买</a>
+            </li>
+            <li>
+                <a style="color:#000;" href="javascript:;">支付方式</a><br/>
+                <a href="javascript:;">发票制度</a>
+            </li>
+            <li>
+                <a style="color:#000;" href="javascript:;">配送方式</a><br/>
+                <a href="javascript:;">配送运费及时效</a>
+            </li>
+             <li>
+                <a style="color:#000;" href="javascript:;">售后服务</a><br/>
+                <a href="javascript:;">退换货政策及办理</a><br/>
+                <a href="javascript:;">自助退换货</a><br/>
+                <a href="javascript:;">订单跟踪</a>
+            </li>
+            <li>
+                <a style="color:#000;" href="javascript:;">帮助中心</a><br/>
+                <a href="javascript:;">找回密码</a><br/>
+                <a href="javascript:;">常见问题</a><br/>
+                <a href="javascript:;">意见反馈</a>
+            </li>
+            <li style="background:0;">
+                <img style="margin-left: 50px;" src="../images/oo.jpg"/>
+            </li>
+        </ul>
+    </div>
+    <div class="bottom-1">
+        <a href="javascript:;">©2007-2014 Mbaobao All Rights Reserved. 嘉兴市麦包包网络科技有限公司 版权所有，禁止非法复制 经营许可证编号： 经营许可证编号：浙B2-20100425</a>
+        <ul>
+            <li style="margin-left: 300px;line-height: 35px">
+                <a href="javascript:;">服务条款</a>
+            </li>
+            <li style="line-height: 35px">
+                <a href="javascript:;">网络制度</a>
+            </li>
+            <li>
+              <a class="imgA1" href="javascript:;"></a>
+            </li>
+            <li>
+              <a class="imgA2" href="javascript:;"></a>
+            </li>
+            <li>
+              <a class="imgA3" href="javascript:;"></a>
+            </li>
+            <li>
+              <a class="imgA4" href="javascript:;"></a>
+            </li>
+            <li>
+              <a class="imgA5" href="javascript:;"></a>
+            </li>
+            <li>
+                <a style="line-height: 35px" href="javascript:;">网站导航</a>
+            </li>
+        </ul>
+    </div>
+   
+</body>
+</html>
+<script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="../js/public.js"></script>
+<script type="text/javascript" src="../js/form.js"></script>
