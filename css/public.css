@@ -32,7 +32,12 @@ ul {
   border: 1px solid #d41c50;
   text-align: center;
 }
-.fixedUl1 > li > span {
+.fixedUl1 > li > a {
+  display: block;
+  font-size: 12px;
+  color: #fff;
+}
+.fixedUl1 > li > a > span {
   display: block;
   width: 36px;
   height: 32px;
@@ -40,14 +45,17 @@ ul {
   margin-left: 16px;
   margin-top: 5px;
 }
-.fixedUl1 > li > a {
+.fixedUl1 > li > a > a {
   font-size: 12px;
   color: #fff;
 }
 .fixedUl1 > #fixed1-li-1 {
   display: none;
+  /* &>span{
+  	background-position:-106px 0px;
+  } */
 }
-.fixedUl1 > #fixed1-li-1 > span {
+.fixedUl1 > #fixed1-li-1 > a > span {
   background-position: -106px 0px;
 }
 .fixedUl1 > #fixed1-li-1:hover {
@@ -57,10 +65,13 @@ ul {
 .fixedUl1 > #fixed1-li-1:hover > a {
   color: #d51e51;
 }
-.fixedUl1 > #fixed1-li-1:hover > span {
+.fixedUl1 > #fixed1-li-1:hover > a > a {
+  color: #d51e51;
+}
+.fixedUl1 > #fixed1-li-1:hover > a > span {
   background-position: -106px -36px;
 }
-.fixedUl1 > #fixed1-li-2 > span {
+.fixedUl1 > #fixed1-li-2 > a > span {
   background-position: -36px 0px;
 }
 .fixedUl1 > #fixed1-li-2:hover {
@@ -70,10 +81,13 @@ ul {
 .fixedUl1 > #fixed1-li-2:hover > a {
   color: #d51e51;
 }
-.fixedUl1 > #fixed1-li-2:hover > span {
+.fixedUl1 > #fixed1-li-2:hover > a > a {
+  color: #d51e51;
+}
+.fixedUl1 > #fixed1-li-2:hover > a > span {
   background-position: -36px -36px;
 }
-.fixedUl1 > #fixed1-li-3 > span {
+.fixedUl1 > #fixed1-li-3 > a > span {
   background-position: 0px 0px;
 }
 .fixedUl1 > #fixed1-li-3:hover {
@@ -83,10 +97,13 @@ ul {
 .fixedUl1 > #fixed1-li-3:hover > a {
   color: #d51e51;
 }
-.fixedUl1 > #fixed1-li-3:hover > span {
+.fixedUl1 > #fixed1-li-3:hover > a > a {
+  color: #d51e51;
+}
+.fixedUl1 > #fixed1-li-3:hover > a > span {
   background-position: 0px -36px;
 }
-.fixedUl1 > #fixed1-li-4 > span {
+.fixedUl1 > #fixed1-li-4 > a > span {
   background-position: -72px 0px;
 }
 .fixedUl1 > #fixed1-li-4:hover {
@@ -96,8 +113,11 @@ ul {
 .fixedUl1 > #fixed1-li-4:hover > a {
   color: #d51e51;
 }
-.fixedUl1 > #fixed1-li-4:hover > span {
-  background-position: -36px -36px;
+.fixedUl1 > #fixed1-li-4:hover > a > a {
+  color: #d51e51;
+}
+.fixedUl1 > #fixed1-li-4:hover > a > span {
+  background-position: -74px -36px;
 }
 
 .fixedUl2 {
@@ -321,15 +341,41 @@ header form #Searchtext {
   background-color: #f0f0f0;
   border: 1px solid #d8d9dc;
   border-bottom: 0;
-  overflow: hidden;
+  position: relative;
 }
 header form #Searchtext input {
   outline: none;
   border: 0;
   background-color: #f0f0f0;
-  overflow: hidden;
   width: 308px;
   height: 28px;
+}
+header form #Searchtext > #souList {
+  display: none;
+  position: absolute;
+  /* padding:10px; */
+  left: -1px;
+  top: 29px;
+  width: 288px;
+  min-height: 1px;
+  background: #fff;
+  /* border:1px solid #ccc; */
+  z-index: 9999;
+}
+header form #Searchtext > #souList > li {
+  line-height: 30px;
+  width: 288px;
+  padding-left: 10px;
+  border-bottom: 1px dashed #ccc;
+  font-size: 12px;
+  cursor: pointer;
+}
+header form #Searchtext > #souList > li > a {
+  color: #333;
+}
+header form #Searchtext > #souList > li > a:hover {
+  color: red;
+  text-decoration: underline;
 }
 header form #Searchbtn {
   float: left;
