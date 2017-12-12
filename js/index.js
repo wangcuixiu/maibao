@@ -76,3 +76,32 @@ function showXlink(){
 
 }
 
+//搜搜索框跨域
+function callback(data){
+		data.result.forEach((v)=>{
+			let str=`
+				<li>
+                    <a href="html/list.html">${v}</a>
+                </li>
+			`;
+			$("#souList").append(str);
+		})
+	}
+
+	$("#SearchId").bind("input",function(){
+		$("#souList").css("display","block");
+		$("#souList").html("");
+		if($(this).val()!=""){
+			var script=document.createElement("script");
+			script.src="https://suggest.taobao.com/sug?code=utf-8&q="+$(this).val()+"&_ksTS=1511352574243_469&callback=callback&k=1&area=c2c&bucketid=17";
+			document.body.appendChild(script);
+		}
+	});
+	$("#SearchId").blur(function(){
+		setTimeout(function(){
+			$("#souList").css("display","none");
+		},500);
+		
+	});	
+		
+	
