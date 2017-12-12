@@ -36,6 +36,8 @@ ul {
   display: block;
   font-size: 12px;
   color: #fff;
+  width: 66px;
+  height: 64px;
 }
 .fixedUl1 > li > a > span {
   display: block;
@@ -45,8 +47,9 @@ ul {
   margin-left: 16px;
   margin-top: 5px;
 }
-.fixedUl1 > li > a > a {
+.fixedUl1 > li > a > b {
   font-size: 12px;
+  font-weight: 100;
   color: #fff;
 }
 .fixedUl1 > #fixed1-li-1 {
@@ -65,7 +68,7 @@ ul {
 .fixedUl1 > #fixed1-li-1:hover > a {
   color: #d51e51;
 }
-.fixedUl1 > #fixed1-li-1:hover > a > a {
+.fixedUl1 > #fixed1-li-1:hover > a > b {
   color: #d51e51;
 }
 .fixedUl1 > #fixed1-li-1:hover > a > span {
@@ -81,7 +84,7 @@ ul {
 .fixedUl1 > #fixed1-li-2:hover > a {
   color: #d51e51;
 }
-.fixedUl1 > #fixed1-li-2:hover > a > a {
+.fixedUl1 > #fixed1-li-2:hover > a > b {
   color: #d51e51;
 }
 .fixedUl1 > #fixed1-li-2:hover > a > span {
@@ -97,7 +100,7 @@ ul {
 .fixedUl1 > #fixed1-li-3:hover > a {
   color: #d51e51;
 }
-.fixedUl1 > #fixed1-li-3:hover > a > a {
+.fixedUl1 > #fixed1-li-3:hover > a > b {
   color: #d51e51;
 }
 .fixedUl1 > #fixed1-li-3:hover > a > span {
@@ -113,7 +116,7 @@ ul {
 .fixedUl1 > #fixed1-li-4:hover > a {
   color: #d51e51;
 }
-.fixedUl1 > #fixed1-li-4:hover > a > a {
+.fixedUl1 > #fixed1-li-4:hover > a > b {
   color: #d51e51;
 }
 .fixedUl1 > #fixed1-li-4:hover > a > span {
