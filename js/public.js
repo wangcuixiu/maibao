@@ -16,37 +16,12 @@ window.onscroll = function(){
 
 showLInk();
 function showLInk(){
-	let mytime1=null;
-	let mytime2=null;
-	$("#xlink-span").mouseenter(function(){
-		clearTimeout(mytime1);
-		clearTimeout(mytime2);
-	$("#xianlink-ul").css("display","block");
-
-	$("header").mouseenter(function(){
-		$("#xianlink-ul").css("display","none");
-	});
-
-	
-	$("#xianlink-ul").mouseenter(function(){
-		clearTimeout(mytime1);
+	$("#big-span").mouseenter(function(){
 		$("#xianlink-ul").css("display","block");
 	});
-	$("#xianlink-ul").mouseleave(function(){
-		$(".content").mouseenter(function(){
-			$("#xianlink-ul").css("display","none");
-			clearTimeout(mytime2);
-		});
-		 mytime2=setTimeout(function(){
-			$("#xianlink-ul").css("display","none");
-		},2000)
-	});
-
-});
-	$("#xlink-span").mouseleave(function(){
-		 mytime1=setTimeout(function(){
-			$("#xianlink-ul").css("display","none");
-		},2000)
+	$("#big-span").mouseleave(function(){
+		$("#xianlink-ul").css("display","none");
+			
 	});
 }
 
@@ -111,6 +86,32 @@ function showXlink(){
 
 }
 
-			
+//搜搜索框跨域
+function callback(data){
+		data.result.forEach((v)=>{
+			let str=`
+				<li>
+                    <a href="list.html">${v}</a>
+                </li>
+			`;
+			$("#souList").append(str);
+		})
+	}
+
+	$("#SearchId").bind("input",function(){
+		$("#souList").css("display","block");
+		$("#souList").html("");
+		if($(this).val()!=""){
+			var script=document.createElement("script");
+			script.src="https://suggest.taobao.com/sug?code=utf-8&q="+$(this).val()+"&_ksTS=1511352574243_469&callback=callback&k=1&area=c2c&bucketid=17";
+			document.body.appendChild(script);
+		}
+	});
+	$("#SearchId").blur(function(){
+		setTimeout(function(){
+			$("#souList").css("display","none");
+		},500);
+		
+	});	
 		
 	

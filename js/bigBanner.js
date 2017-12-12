@@ -2,7 +2,6 @@
 	function lunbo(box,btnLeft,btnRight,list,btn){
 		/*console.log(imgs)*/
 	var imgs=Array.from(list.children());
-	console.log(imgs)
 	var btns=Array.from(btn.children());
 
 	var num=0;

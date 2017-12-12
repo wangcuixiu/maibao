@@ -15,12 +15,7 @@ function showAddressColor(){
 }
 
 
-//填写地址的框出现和消失
-/*showBox();*/
-/*function showBox(){*/
-//修改地址
-
-
+//添加地址
 addAddress();
 function addAddress(){
 	$("#addAddress").click(function(){
@@ -67,9 +62,9 @@ function addAddress(){
 //修改地址
 updataAddress();
 function updataAddress(){
-
+	let that
 	$("#addressBox").on("click",".updata",function(){
-		let that=this;
+		    that=this;
 			$("#box-1").css("display","block");
 			$("#province-1").val($(this).parent("b").parent("li").children(".pro").html());
 			$("#city-1").val($(this).parent("b").parent("li").children(".cit").html());
@@ -77,34 +72,17 @@ function updataAddress(){
 			$("#name-1").val($(this).parent("b").parent("li").children(".user").html());
 			$("#phoneNumber-1").val($(this).parent("b").parent("li").children(".phNumber").html());
 
-			$("#sure-1").click(function(){
-				$(that).parent("b").parent("li").children(".pro").html($("#province-1").val());
-				$(that).parent("b").parent("li").children(".cit").html($("#city-1").val());
-				$(that).parent("b").parent("li").children(".street").html($("#streetAddress-1").val());
-				$(that).parent("b").parent("li").children(".user").html($("#name-1").val());
-				$(that).parent("b").parent("li").children(".phNumber").html($("#phoneNumber-1").val());
-			});
-	});
-	/*for(let i=0;i<updataBtn.length;i++){
-		$(updataBtn[i]).click(function(){
 			
-			let that=this;
-			$("#box-1").css("display","block");
-			$("#province-1").val($(this).parent("b").parent("li").children(".pro").html());
-			$("#city-1").val($(this).parent("b").parent("li").children(".cit").html());
-			$("#streetAddress-1").val($(this).parent("b").parent("li").children(".street").html());
-			$("#name-1").val($(this).parent("b").parent("li").children(".user").html());
-			$("#phoneNumber-1").val($(this).parent("b").parent("li").children(".phNumber").html());
+	});
 
-			$("#sure-1").click(function(){
+	$("#sure-1").click(function(){
+				console.log(that)
 				$(that).parent("b").parent("li").children(".pro").html($("#province-1").val());
 				$(that).parent("b").parent("li").children(".cit").html($("#city-1").val());
 				$(that).parent("b").parent("li").children(".street").html($("#streetAddress-1").val());
 				$(that).parent("b").parent("li").children(".user").html($("#name-1").val());
 				$(that).parent("b").parent("li").children(".phNumber").html($("#phoneNumber-1").val());
 			});
-		});
-	}*/
 
 	$("#content-box-1").click(function(ev){
 		let e  = ev || window.event;
@@ -135,7 +113,7 @@ function deleteShopping(){
 	
 
 
-//省市联动效果
+//省市联动效果-1
 showCity();
 function showCity(){
 	let provinceCitys;
@@ -149,7 +127,6 @@ function showCity(){
 			showCity();		
 		});
 	}
-
 	function showProvince(){
 		let provinces = provinceCitys.城市代码;
 		for(let i=0;i<provinces.length;i++){
@@ -187,4 +164,58 @@ function showCity(){
 		showCity();
 	});
 }
+
+
+//省市联动效果2
+showCity2();
+function showCity2(){
+	let provinceCitys;
+	//获取所有的省市数据
+	function getCitys(){
+		$.get("../php/city.php","",function(data){
+			provinceCitys = $.parseJSON(data);
+			/*console.log(provinceCitys)*/
+			showProvince();
+			//显示市
+			showCity();		
+		});
+	}
+	function showProvince(){
+		let provinces = provinceCitys.城市代码;
+		for(let i=0;i<provinces.length;i++){
+			let optionDom = document.createElement("option");
+			$(optionDom).val(provinces[i].省 );
+			$(optionDom).html(provinces[i].省);
+			$("#province-1").append(optionDom);
+		}
+	}
+
+	function showCity(){
+	//1、查找当前省对应的市的数组
+		let index = -1;
+		let provinces = provinceCitys.城市代码;
+		for(let i=0;i<provinces.length;i++){
+			if(provinces[i].省==$("#province-1").val()){
+				index = i;
+				break;
+			}
+		}
+		
+		//2、显示省对应的市。
+		//provinces[index].市;
+		$("#city-1").html("");
+		let citys = provinces[index].市;
+		for(let i=0;i<citys.length;i++){
+			let optionDom = document.createElement("option");
+			$(optionDom).html(citys[i].市名);
+			$("#city-1").append(optionDom);
+		}
+	}
+
+	getCitys();
+	$("#province-1").change(function(){
+		showCity();
+	});
+}
+
 
